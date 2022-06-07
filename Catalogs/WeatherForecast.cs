@@ -27,6 +27,7 @@ namespace Catalogs
         public string? Summary { get; set; }
         public Weathers Weather { get; set; } = Weathers.Cold;
     }
+    [JsonConverter(typeof(JsonStringEnumConverter))]
     public enum Weathers
     {
         Cold =1,

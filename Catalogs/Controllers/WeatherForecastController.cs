@@ -47,7 +47,9 @@ namespace Catalogs.Controllers
             {
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+                Summary = Summaries[Random.Shared.Next(Summaries.Length)],
+                Weather = (Weathers)Random.Shared.Next(1, 4),
+
             })
             .ToArray();
         }
@@ -70,20 +72,17 @@ namespace Catalogs.Controllers
             {
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+                Summary = Summaries[Random.Shared.Next(Summaries.Length)],
+                Weather = (Weathers)3,
+                
             })
             .ToArray();
         }
         [HttpPost("GetWeatherForecast3")]
-        public IEnumerable<WeatherForecast> Get3( WeatherForecast weather)
+        public WeatherForecast Get3( WeatherForecast weather)
         {
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-            })
-            .ToArray();
+            int w = (int)weather.Weather;
+            return weather;
         }
         [HttpDelete("GetWeatherForecast4")]
         public IEnumerable<WeatherForecast> Get4([Required] int id)
