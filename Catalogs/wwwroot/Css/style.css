@@ -1,0 +1,20 @@
+﻿.swagger-section #header {
+    background-color: #ffd800;
+    padding: 14px;
+}
+.opblock-description {
+    direction: rtl !important;
+    font-family: Vazir !important;
+}
+.parameters-col_description {
+    direction: rtl !important;
+}
+.parameters-col_description p {
+    font-weight: bold;
+    font-family: Vazir !important;
+}
+.opblock-summary-description {
+    font-weight: bold;
+    font-family: Vazir !important;
+    direction: rtl !important;
+}

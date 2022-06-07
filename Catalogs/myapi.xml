@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Catalogs</name>
+    </assembly>
+    <members>
+        <member name="M:Catalogs.Controllers.WeatherForecastController.Get(System.Int32)">
+            <summary>
+            نمایش دمای هوا
+            </summary>
+            <param name="id">شناسه ایتم</param>
+            <returns></returns>
+            <remarks>
+            ### نکته ###
+            Use this call to retrieve a list of entities and their descriptions. This is used when setting up a new ViewSet.
+            - Returns an array of **EntityDescription** objects.
+            - اریهیسی شس شسیسشی 
+            <!-- 
+            <code>
+                // contrived code sample to demonstrate code block in swagger.
+                for (i=0; i < 5; i++)
+                {
+                    doesthiswork = yesitdoes;
+                }
+            </code>
+            -->
+            </remarks>
+        </member>
+        <member name="T:Catalogs.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Catalogs.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Catalogs.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Catalogs.WeatherForecast.Date">
+            <summary>
+            تاریخ به میلادی
+            <br /> 
+            تاریخ به میلادی
+            <br /> 
+            تاریخ به میلادی
+            <br /> 
+            تاریخ به میلادی
+            <br/>
+            تاریخ به میلادی
+            
+            </summary>
+        </member>
+    </members>
+</doc>
